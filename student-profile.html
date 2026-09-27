@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student Profile and College Information Portal">
+    <title>Student Profile Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header section -->
+    <header id="home">
+        <h1>Centurion Institute of Technology</h1>
+        <p>Student Profile & College Information Portal</p>
+        <hr>
+    </header>
+
+    <!-- Navigation menu -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#student">Student</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#registration">Registration</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <main>
+
+        <!-- Student introduction -->
+        <section id="student">
+            <h2>Student Information</h2>
+
+            <div class="profile">
+                <img src="saina.png"
+                     alt="Student profile photograph"
+                     width="180"
+                     height="180">
+
+                <article>
+                    <p>
+                        My name is <b>Saina Parween</b>. I am a
+                        <strong>Computer Science student</strong> at
+                        <i>Centurion University of Technology</i>.
+                    </p>
+
+                   <p>
+    I am currently working as a <strong>Software Engineer</strong> with experience
+    in <em>Java, Spring Boot, Angular, and SQL</em>. I am passionate about
+    <u>Software Engineering and Full Stack Development</u> and continuously
+    improving my technical skills.
+</p>
+
+                    <p>
+                        My goal is to become a <mark>professional software developer</mark>.
+                        I believe that <small>continuous learning</small> is important
+                        for a successful career.
+                    </p>
+
+                    <p>
+                        Water formula: H<sub>2</sub>O |
+                        Mathematics: X<sup>2</sup>
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Technical skills -->
+        <!-- Technical Skills -->
+<section id="skills">
+    <h2>Technical Skills</h2>
+
+    <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+        <li>Spring Boot</li>
+        <li>Spring JDBC</li>
+        <li>RESTful APIs</li>
+        <li>Angular</li>
+        <li>SQL</li>
+        <li>MySQL</li>
+        <li>PostgreSQL</li>
+        <li>Git & GitHub</li>
+        <li>JWT Authentication</li>
+        <li>Microservices</li>
+    </ul>
+</section>
+
+        <!-- Education details -->
+        <section id="education">
+            <h2>Education Details</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Course</th>
+                        <th>College</th>
+                        <th>Year</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>STU1001</td>
+                        <td>B.Tech Computer Science</td>
+                        <td>ABC Institute of Technology</td>
+                        <td>2026</td>
+                        <td>82%</td>
+                    </tr>
+                    <tr>
+                        <td>STU1001</td>
+                        <td>Diploma in Computer Science</td>
+                        <td>ABC Polytechnic</td>
+                        <td>2022</td>
+                        <td>78%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Hobbies -->
+        <section>
+            <h2>Hobbies</h2>
+            <ol>
+                <li>Reading books</li>
+                <li>Photography</li>
+                <li>Playing cricket</li>
+                <li>Listening to music</li>
+            </ol>
+        </section>
+
+        <!-- Useful links -->
+        <section class="links">
+            <h2>Useful Links</h2>
+            <a href="https://www.google.com" target="_blank" rel="noopener">Google</a>
+            <a href="https://www.w3schools.com" target="_blank" rel="noopener">W3Schools</a>
+            <a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a>
+            <a href="about.html">College About Page</a>
+        </section>
+
+        <!-- Registration form -->
+        <section id="registration">
+            <h2>Student Registration Form</h2>
+
+            <form action="#" method="post">
+
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"
+                           placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="example@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password"
+                           placeholder="Enter password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age"
+                           min="16" max="100" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <div class="inline">
+                        <label><input type="radio" name="gender" value="male" required> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                        <label><input type="radio" name="gender" value="other"> Other</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="course">Course:</label>
+                    <select id="course" name="course" required>
+                        <option value="">-- Select Course --</option>
+                        <option value="btech">B.Tech Computer Science</option>
+                        <option value="bca">BCA</option>
+                        <option value="mca">MCA</option>
+                        <option value="bba">BBA</option>
+                        <option value="mba">MBA</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Skills:</label>
+                    <div class="inline">
+                        <label><input type="checkbox" name="skills" value="html"> HTML</label>
+                        <label><input type="checkbox" name="skills" value="css"> CSS</label>
+                        <label><input type="checkbox" name="skills" value="javascript"> JavaScript</label>
+                        <label><input type="checkbox" name="skills" value="java"> Java</label>
+                        <label><input type="checkbox" name="skills" value="sql"> SQL</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="photo">Upload Student Photo:</label>
+                    <input type="file" id="photo" name="photo" accept="image/*">
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="5"
+                              placeholder="Enter your complete address" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city"
+                           placeholder="Enter city" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="state">State:</label>
+                    <select id="state" name="state" required>
+                        <option value="">-- Select State --</option>
+                        <option value="karnataka">Karnataka</option>
+                        <option value="odisha">Odisha</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="maharashtra">Maharashtra</option>
+                        <option value="west-bengal">West Bengal</option>
+                    </select>
+                </div>
+
+                <div>
+                    <button type="submit" class="submit">Submit</button>
+                    <button type="reset" class="reset">Reset</button>
+                </div>
+
+            </form>
+        </section>
+
+        <!-- Bonus media section -->
+        <section>
+            <h2>College Media</h2>
+
+            <div class="media">
+                <div>
+                    <h3>College Audio</h3>
+                    <audio controls>
+                        <source src="audio.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div>
+                    <h3>College Video</h3>
+                    <video width="640" height="360" controls>
+                        <source src="video.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                </div>
+
+                <div>
+                    <h3>YouTube Video</h3>
+                    <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/UB1O30fR-EE"
+                        title="HTML Tutorial"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <div>
+                    <h3>College Location</h3>
+                    <iframe
+                        src="https://www.google.com/maps?q=Bengaluru%20Karnataka&output=embed"
+                        width="600"
+                        height="350"
+                        title="College location map"
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>ABC Institute of Technology</strong></p>
+        <p>Email: info@abcinstitute.example</p>
+        <p>&copy; 2026 ABC Institute of Technology. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
